@@ -6853,15 +6853,15 @@ QAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFA
 BQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAFABQAUAF
 ABQAUAFABQAUAf/Z" transform="matrix(1.008036e-04 0.8 -0.8 1.008036e-04 849.9244 2.7648)">
 </image>
-<text transform="matrix(1 -8.469450e-05 8.469450e-05 1 713.83 768.8041)" class="st0 st1 st2">ANTENAS</text>
-<text transform="matrix(1 0 0 1 590.1998 808.8445)" class="st0 st1 st2">VENTILADOR</text>
+<text transform="matrix(1 -8.469450e-05 8.469450e-05 1 713.83 768.8041)" class="st0 st1 st2">Antenas</text>
+<text transform="matrix(1 0 0 1 590.1998 808.8445)" class="st0 st1 st2">Ventilador</text>
 <ellipse class="st3" cx="269.55" cy="969.79" rx="11.28" ry="7"/>
-<text transform="matrix(1 0 0 1 590.199 648.8596)" class="st4"><tspan x="0" y="0" class="st0 st1 st2">BATERIAS </tspan><tspan x="0" y="22.86" class="st0 st1 st2">DE ENERGÍA</tspan></text>
-<text transform="matrix(1 0 0 1 609.6929 105.4917)" class="st0 st1 st2">HEMISFERIO FRONTAL</text>
-<text transform="matrix(1 0 0 1 655.4885 239.7338)" class="st4"><tspan x="0" y="0" class="st0 st1 st2">TÉRMICA DUAL E </tspan><tspan x="0" y="22.86" class="st0 st1 st2">INTERRUPTOR</tspan><tspan x="0" y="45.71" class="st0 st1 st2">BAROMÉTRICO</tspan></text>
-<text transform="matrix(1 0 0 1 121.5759 887.9433)" class="st4"><tspan x="0" y="0" class="st0 st1 st2">HEMISFERIO </tspan><tspan x="0" y="22.86" class="st0 st1 st2">POSTERIOR</tspan></text>
-<text transform="matrix(1 0 0 1 111.3996 711.8145)" class="st0 st1 st2">INTERRUPTOR</text>
-<text transform="matrix(1 0 0 1 269.3004 1080.2568)" class="st0 st1 st2">INTERFAZ ELÉCTRICA</text>
+<text transform="matrix(1 0 0 1 590.199 648.8596)" class="st4"><tspan x="0" y="0" class="st0 st1 st2">Baterias </tspan><tspan x="0" y="22.86" class="st0 st1 st2">de energía</tspan></text>
+<text transform="matrix(1 0 0 1 609.6929 105.4917)" class="st0 st1 st2">Hemisferio frontal</text>
+<text transform="matrix(1 0 0 1 655.4885 239.7338)" class="st4"><tspan x="0" y="0" class="st0 st1 st2">Térmica dual e </tspan><tspan x="0" y="22.86" class="st0 st1 st2">interruptor</tspan><tspan x="0" y="45.71" class="st0 st1 st2">barométrico</tspan></text>
+<text transform="matrix(1 0 0 1 121.5759 887.9433)" class="st4"><tspan x="0" y="0" class="st0 st1 st2">Hemisferio </tspan><tspan x="0" y="22.86" class="st0 st1 st2">posterior</tspan></text>
+<text transform="matrix(1 0 0 1 111.3996 711.8145)" class="st0 st1 st2">Interruptor</text>
+<text transform="matrix(1 0 0 1 269.3004 1080.2568)" class="st0 st1 st2">Interfaz eléctrica</text>
 <g>
 	<polyline class="st5" points="561.36,128.65 544.68,128.65 544.68,114.52 	"/>
 	<path class="st5" d="M601.7,91.88c0,0-36.26-1.36-57.02,36.77"/>
