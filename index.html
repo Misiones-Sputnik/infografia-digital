@@ -1,525 +1,406 @@
 <!DOCTYPE html>
 <html lang="es">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
 
-<head>
-
-
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
-
-    <!-- Primary Meta Tags -->
-    <title>Programa Sputnik: Inicio de la carrera espacial</title>
-    <meta name="title" content="Programa Sputnik: Inicio de la carrera espacial">
-    <meta name="description" content="El proyecto Sputnik fue un programa ruso compuesto por diversas
+        <!-- Primary Meta Tags -->
+        <title>Programa Sputnik: Inicio de la carrera espacial</title>
+        <meta name="title" content="Programa Sputnik: Inicio de la carrera espacial" />
+        <meta
+            name="description"
+            content="El proyecto Sputnik fue un programa ruso compuesto por diversas
     misiones en las cuales se mandaron distintos satélites al espacio
     con el fin de comprenderlo y ver que tan viable eran los viajes
-    espaciales. ">
+    espaciales. "
+        />
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://SateliteSputnik.github.io/clase-15/">
-    <meta property="og:title" content="Programa Sputnik: Inicio de la carrera espacial">
-    <meta property="og:description" content="El proyecto Sputnik fue un programa ruso compuesto por diversas
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://SateliteSputnik.github.io/clase-15/" />
+        <meta property="og:title" content="Programa Sputnik: Inicio de la carrera espacial" />
+        <meta
+            property="og:description"
+            content="El proyecto Sputnik fue un programa ruso compuesto por diversas
     misiones en las cuales se mandaron distintos satélites al espacio
     con el fin de comprenderlo y ver que tan viable eran los viajes
-    espaciales. ">
-    <meta property="og:image" content="https://i.ibb.co/zmrBPNS/satelite.jpg">
+    espaciales. "
+        />
+        <meta property="og:image" content="https://i.ibb.co/zmrBPNS/satelite.jpg" />
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://SateliteSputnik.github.io/clase-15/">
-    <meta property="twitter:title" content="Programa Sputnik: Inicio de la carrera espacial">
-    <meta property="twitter:description" content="El proyecto Sputnik fue un programa ruso compuesto por diversas
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://SateliteSputnik.github.io/clase-15/" />
+        <meta property="twitter:title" content="Programa Sputnik: Inicio de la carrera espacial" />
+        <meta
+            property="twitter:description"
+            content="El proyecto Sputnik fue un programa ruso compuesto por diversas
     misiones en las cuales se mandaron distintos satélites al espacio
     con el fin de comprenderlo y ver que tan viable eran los viajes
-    espaciales. ">
-    <meta property="twitter:image" content="https://i.ibb.co/zmrBPNS/satelite.jpg">
+    espaciales. "
+        />
+        <meta property="twitter:image" content="https://i.ibb.co/zmrBPNS/satelite.jpg" />
 
-    <style>
-        :root {
-            --bs-font-sans-serif: "Roboto", sans-serif;
-        }
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            font-weight: 700;
-        }
-
-        * {
-            --bs-font-sans-serif: "Roboto", sans-serif;
-        }
-
-        h7 {
-            font-weight: 500;
-        }
-
-
-
-        @media (min-width: 992px) {
-            .container {
-                max-width: 960px;
+        <style>
+            :root {
+                --bs-font-sans-serif: "Roboto", sans-serif;
             }
-        }
 
-        body {
-            background: black url(assets/Tierra.jpg) center bottom no-repeat;
-            background-size: 100% auto;
-            padding-bottom: 50vh;
-        }
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-weight: 700;
+            }
 
-        header {
-            padding-top: 30vh;
-            background-image: url(assets/sputnik.gif);
-            background-repeat: no-repeat;
-            background-size: 100% auto;
-        }
+            * {
+                --bs-font-sans-serif: "Roboto", sans-serif;
+            }
 
+            h7 {
+                font-weight: 500;
+            }
 
+            @media (min-width: 992px) {
+                .container {
+                    max-width: 960px;
+                }
+            }
 
-        .gray-font {
-            color: rgb(141, 141, 141);
-        }
+            body {
+                background: black url(assets/Tierra.jpg) center bottom no-repeat;
+                background-size: 100% auto;
+                padding-bottom: 50vh;
+            }
 
-        .white-font {
-            color: white;
-        }
+            header {
+                padding-top: 30vh;
+                background-image: url(assets/sputnik.gif);
+                background-repeat: no-repeat;
+                background-size: 100% auto;
+            }
 
-        .red-font {
-            color: rgb(250, 49, 49)
-        }
+            .gray-font {
+                color: rgb(141, 141, 141);
+            }
 
-        .redish-font {
-            color: rgb(247, 114, 114)
-        }
+            .white-font {
+                color: white;
+            }
 
-        .correcto-font {
-            color: rgb(188, 218, 243)
-        }
-    </style>
-    <title>Programa Sputnik</title>
-</head>
+            .red-font {
+                color: rgb(250, 49, 49);
+            }
 
-<body class="bg-black text-white">
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                    <h1 class="mb-3 mx-5 text-center">PROGRAMA SPUTNIK</h1>
+            .redish-font {
+                color: rgb(247, 114, 114);
+            }
 
-                    <h2 class="mb-5 text-center red-font">INICIO DE LA CARRERA ESPACIAL</h2>
+            .correcto-font {
+                color: rgb(188, 218, 243);
+            }
+        </style>
+        <title>Programa Sputnik</title>
+    </head>
 
-
-
-                    <p>
-                        El proyecto Sputnik fue un programa ruso compuesto por diversas
-                        misiones en las cuales se mandaron distintos satélites al espacio
-                        con el fin de comprenderlo y ver que tan viable eran los viajes
-                        espaciales.
-                    </p>
+    <body class="bg-black text-white">
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+                        <h1 class="mb-3 mx-5 text-center text-uppercase">El Programa Sputnik</h1>
+                        <h2 class="mb-5 text-center red-font text-uppercase fs-4">Un sorpresivo inicio para la carrera espacial</h2>
+                        <p class="lead">
+                            Diez misiones espaciales de la URSS son las que componen este programa iniciado en la década de 1950. La primera de estas misiones puso en órbita en octubre de 1957 al Sputnik, el primer satélite artificial de la
+                            historia, y la segunda, un mes más tarde, llevó al espacio a la perrita Laika, el primer ser vivo en llegar a tales alturas, para morir carbonizada. Las siguientes misiones sirvieron de base al programa Vostok.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <section id="linea-de-tiempo">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+        </header>
 
+        <section id="linea-de-tiempo">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+                        <h3 class="text-center mt-5">Sputnik v/s Vanguard</h3>
 
-                    <h3 class="text-center mt-5">Sputnik v/s Vanguard</h3>
+                        <p>
+                            Este proyecto soviético fue el detonante de la carrera espacial que se desató en 1955 durante la guerra fría y por los distintos objetivos que tenía cada una de las misiones. Mandar el primer satélite artificial
+                            a orbitar la Tierra dejó un gran legado en el mundo de la aeronáutica y un gran peso en el nombre Sputnik que significa
+                            <em>"satélite"</em> o
+                            <em>"compañero de viaje".</em>
+                        </p>
 
-                    <p>
-                        Este proyecto soviético fue el detonante de la carrera espacial que se desató en 1955 durante la
-                        guerra fría y por los
-                        distintos
-                        objetivos que tenía cada una de las misiones. Mandar el primer satélite artificial a orbitar la
-                        Tierra dejó
-                        un gran legado en el mundo de la aeronáutica y un gran peso en el nombre Sputnik que significa
-                        <em>"satélite"</em> o
-                        <em>"compañero de viaje".</em>
-                    </p>
+                        <object type="image/svg+xml" data="assets/linea.svg" class="w-100">
+                            Línea de tiempo entre los hitos de la URSS y EEUU
+                        </object>
 
-                    <img src="assets/linea.svg" class="w-100 mb-5"
-                        alt="Línea de tiempo entre los hitos de la URSS y EEUU " />
+                        <h4 class="text-center my-5">
+                            MISIONES
+                        </h4>
 
-
-
-                    <h4 class="text-center my-5">
-                        MISIONES
-                    </h4>
-
-                    <table class="table table-black table-bordered mb-5">
-                        <thead class="white-font">
-                            <tr>
-                                <th scope="col">Fecha</th>
-                                <th scope="col">Programa Satélite</th>
-                                <th scope="col">Éxito del despegue</th>
-                                <th scope="col">Estado final</th>
-                            </tr>
-                        </thead>
-                        <tbody class="gray-font">
-                            <tr>
-                                <th scope="row">octubre de 1957</th>
-                                <td>Sputnik 1</td>
-                                <td class="correcto-font">Exitoso</td>
-                                <td>Desintegrado</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">noviembre de 1957</th>
-                                <td>Sputnik 2</td>
-                                <td class="correcto-font">Exitoso</td>
-                                <td>Desintegrado</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">febrero de 1958</th>
-                                <td>Sputnik 3</td>
-                                <td class="red-font">Fallido</td>
-                                <td>Desintegrado</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">mayo de 1960</th>
-                                <td>Sputnik 4</td>
-                                <td class="correcto-font">Exitoso</td>
-                                <td>Desintegrado</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">agosto de 1960</th>
-                                <td>Sputnik 5</td>
-                                <td class="correcto-font">Exitoso</td>
-                                <td>Recuperado</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">diciembre de 1960</th>
-                                <td>Sputnik 6</td>
-                                <td class="red-font">Fallido</td>
-                                <td>No recuperado</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">febrero de 1961</th>
-                                <td>Sputnik 7</td>
-                                <td class="red-font">Fallido</td>
-                                <td>No recuperado</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                        <table class="table table-black table-bordered mb-5">
+                            <thead class="white-font">
+                                <tr>
+                                    <th scope="col">Fecha</th>
+                                    <th scope="col">Programa Satélite</th>
+                                    <th scope="col">Éxito del despegue</th>
+                                    <th scope="col">Estado final</th>
+                                </tr>
+                            </thead>
+                            <tbody class="gray-font">
+                                <tr>
+                                    <th scope="row">octubre de 1957</th>
+                                    <td>Sputnik 1</td>
+                                    <td class="correcto-font">Exitoso</td>
+                                    <td>Desintegrado</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">noviembre de 1957</th>
+                                    <td>Sputnik 2</td>
+                                    <td class="correcto-font">Exitoso</td>
+                                    <td>Desintegrado</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">febrero de 1958</th>
+                                    <td>Sputnik 3</td>
+                                    <td class="red-font">Fallido</td>
+                                    <td>Desintegrado</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">mayo de 1960</th>
+                                    <td>Sputnik 4</td>
+                                    <td class="correcto-font">Exitoso</td>
+                                    <td>Desintegrado</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">agosto de 1960</th>
+                                    <td>Sputnik 5</td>
+                                    <td class="correcto-font">Exitoso</td>
+                                    <td>Recuperado</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">diciembre de 1960</th>
+                                    <td>Sputnik 6</td>
+                                    <td class="red-font">Fallido</td>
+                                    <td>No recuperado</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">febrero de 1961</th>
+                                    <td>Sputnik 7</td>
+                                    <td class="red-font">Fallido</td>
+                                    <td>No recuperado</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div id="franja">
-            <div></div>
-        </div>
-    </section>
+        </section>
 
-    <section id="naves">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-11 mx-auto">
-                    <h3 class="text-center mt-5">SATÉLITES</h3>
+        <section id="naves">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+                        <h3 class="text-center mt-5">SATÉLITES</h3>
 
+                        <article class="row align-items-center my-4" id="Sputnik-1">
+                            <div class="col-md-6 order-md-last">
+                                <object type="image/svg+xml" data="assets/Satelite1.svg" class="w-100">Gráfica figurativa del satélite Sputnik-1</object>
+                            </div>
+                            <div class="col-md-6 order-md-first">
+                                <h4 class="red-font text-md-end">Sputnik-1</h4>
+                                <h5 class="redish-font fs-6 text-md-end">Спутник 1</h5>
+                                <p class="text-md-end">
+                                    Fue lanzado el 4 de octubre de 1957 (1 año después, EE.UU. creará la NASA). Se convirtió en el primer objeto de fabricación humana en órbita, una esfera de aluminio de 58 cm de diámetro que tenía una masa
+                                    aproximada de 83 kg.
+                                </p>
+                            </div>
+                        </article>
 
+                        <article class="row align-items-center my-4" id="Sputnik-2">
+                            <div class="col-md-6">
+                                <object type="image/svg+xml" data="assets/Satelite2.svg" class="w-100">Gráfica figurativa del satélite Sputnik-2</object>
+                            </div>
+                            <div class="col-md-6">
+                                <h4 class="red-font">Sputnik-2</h4>
+                                <h5 class="redish-font fs-6">Спутник 2</h5>
+                                <p>Su misión consistía en medir la radiación solar y rayos cósmicos, como también proporcionar datos sobre el comportamiento de un ser vivo en el medio espacial.</p>
+                            </div>
+                        </article>
 
-                    <article class="row align-items-center my-4" id="Sputnik-1">
-                        <div class="col-md-6 order-last">
-                            <img src="assets/Satelite1.svg" class="text-center"
-                                alt="Gráfica figurativa del satélite Sputnik-1">
-                        </div>
-                        <div class="col-md-6 order-first">
-                            <h4 class="red-font">Sputnik-1</h4>
-                            <p>
-                                <em class="redish-font">Спутник 1</em>
-                            </p>
-                            <p>Fue lanzado el 4 de octubre de 1957 (1 año después, EE.UU. creará la NASA). Se convirtió
-                                en el
-                                primer objeto
-                                de fabricación humana en órbita, una esfera de aluminio de 58 cm de diámetro que tenía
-                                una masa
-                                aproximada
-                                de 83 kg.</p>
-                        </div>
-                    </article>
-
-                    <article class="row align-items-center my-4" id="Sputnik-2">
-                        <div class="col-md-6">
-                            <img src="assets/Satelite2.svg" class="text-center"
-                                alt="Gráfica figurativa del satélite Sputnik-2">
-                        </div>
-                        <div class="col-md-6">
-                            <h4 class="red-font">Sputnik-2</h4>
-                            <em class="redish-font">Спутник 2</em>
-                            <p>Su misión consistía en medir la radiación solar y rayos cósmicos, como también
-                                proporcionar
-                                datos sobre
-                                el comportamiento de un ser vivo en el medio espacial.
-                            </p>
-                        </div>
-                    </article>
-
-
-                    <article class="row align-items-center my-4" id="Sputnik-3">
-                        <div class="col-md-6 order-last">
-                            <img src="assets/Satelite3.svg" class="text-center"
-                                alt="Gráfica figurativa del satélite Sputnik-3">
-                        </div>
-                        <div class="col-md-6 order-first">
-                            <h4 class="red-font">Sputnik-3</h4>
-                            <em class="redish-font">Спутник 3</em>
-                            <p>Se diseñó para estudiar las capas superiores de la atmósfera y el espacio cósmico. En su
-                                interior contenía
-                                instrumentos para medir la presión y composición de la atmósfera, la concentración de
-                                iones
-                                positivos, las
-                                magnitudes de la carga eléctrica del Sputnik, la tensión de los campos electrostático y
-                                magnéticos
-                                terrestres.</p>
-                        </div>
-                    </article>
-
-
+                        <article class="row align-items-center my-4" id="Sputnik-3">
+                            <div class="col-md-6 order-md-last">
+                                <object type="image/svg+xml" data="assets/Satelite3.svg" class="w-100">Gráfica figurativa del satélite Sputnik-3</object>
+                            </div>
+                            <div class="col-md-6 order-md-first">
+                                <h4 class="red-font text-md-end">Sputnik-3</h4>
+                                <h5 class="redish-font fs-6 text-md-end">Спутник 3</h5>
+                                <p class="text-md-end">
+                                    Se diseñó para estudiar las capas superiores de la atmósfera y el espacio cósmico. En su interior contenía instrumentos para medir la presión y composición de la atmósfera, la concentración de iones
+                                    positivos, las magnitudes de la carga eléctrica del Sputnik, la tensión de los campos electrostático y magnéticos terrestres.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
+
         <section id="otros_sputnik">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-11 mx-auto">
+                    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
                         <h4 class="text-center mt-5">OTROS SATÉLITES</h4>
                         <h4 class="red-font">Sputnik-4</h4>
                         <p class="redish-font">
                             <em>Корабль-Спутник 1</em>
                         </p>
                         <p>
-                            Fue una prueba de vuelo del prototipo de nave que se usaría para la primera
-                            misión del
-                            programa
-                            Vostok, el cual llevaba a bordo un maniquí humanoide al igual que contenía instrumentos
-                            científicos, un
-                            sistema de televisión y voces pregrabadas para monitorear la comunicación. Su finalidad era
-                            testear el
-                            funcionamiento del sistema de soporte vital y la resistencia al vuelo.
+                            Fue una prueba de vuelo del prototipo de nave que se usaría para la primera misión del programa Vostok, el cual llevaba a bordo un maniquí humanoide al igual que contenía instrumentos científicos, un sistema de
+                            televisión y voces pregrabadas para monitorear la comunicación. Su finalidad era testear el funcionamiento del sistema de soporte vital y la resistencia al vuelo.
                         </p>
                         <h4 class="red-font">Sputnik-5</h4>
                         <p class="redish-font">
                             <em>Корабль-Спутник 2</em>
                         </p>
                         <p>
-                            <b>Sputnik-5</b> fue un satélite artificial lanzado en 1960, fue la segunda prueba del
-                            Programa
-                            Vostok. Este
-                            llevaba a bordo una increíble cantidad de diversos seres vivos. En él iban los perros Belka
-                            y
-                            Strelka, 40
-                            ratones, 2 ratas y una diversidad de plantas. La nave regresó a la Tierra al día siguiente y
-                            todos los
-                            animales a
-                            bordo fueron recuperados sanos.
-
-
+                            <b>Sputnik-5</b> fue un satélite artificial lanzado en 1960, fue la segunda prueba del Programa Vostok. Este llevaba a bordo una increíble cantidad de diversos seres vivos. En él iban los perros Belka y Strelka,
+                            40 ratones, 2 ratas y una diversidad de plantas. La nave regresó a la Tierra al día siguiente y todos los animales a bordo fueron recuperados sanos.
                         </p>
                     </div>
                 </div>
             </div>
+        </section>
 
+        <section id="detalles_sputnik_uno" class="mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto mt-5">
+                        <h3 class="text-center mt-5">
+                            SPUTNIK-1
+                        </h3>
+                        <h3 class="text-center red-font mb-5">EN DETALLE</h3>
+                        <p>
+                            Los soviéticos fueron los primeros en poner un satélite en órbita. El 4 de octubre de 1957 despegó desde Baikonur el cohete R-7 con el satélite Sputnik 1 en su punta. El satélite de la misión se incineró durante
+                            su reentrada en la atmósfera terrestre al término de su misión el 4 de enero de 1958, después de 1.440 órbitas alrededor del planeta.
+                        </p>
+                    </div>
+                    <img src="assets/satelite.jpg" class="col-12 mx-auto w-100 my-5" alt="Fotografía del satélite Sputnik-1" />
 
-
-
-            <section id="detalles_sputnik_uno">
-                <div class="container">
-                    <div class="row">
-                        <img src="assets/espaciod.jpg" class="d-md-none w-100" alt="espacio" />
-                        <img src="assets/espaciom.jpg" class="d-none d-md-block w-100" alt="espacio" />
-                        <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                            <h3 class="text-center mt-5">
-                                SPUTNIK-1
-                            </h3>
-                            <h3 class=" text-center red-font mb-5"> EN DETALLE</h3>
-                            <p>
-                                Los soviéticos fueron los primeros en poner un satélite en órbita. El 4 de octubre de
-                                1957
-                                despegó desde
-                                Baikonur el cohete R-7 con el satélite Sputnik 1 en su punta. El satélite de la misión
-                                se
-                                incineró durante
-                                su reentrada en la atmósfera terrestre al término de su misión el 4 de enero de 1958,
-                                después de
-                                1.440
-                                órbitas alrededor del planeta.
-                            </p>
-                        </div>
-                        <img src="assets/satelite.jpg" class="col-12 mx-auto w-100 my-5"
-                            alt="Fotografía del satélite Sputnik-1" />
-
-                        <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                            <h3 class="text-center mt-5">
-                                EL PRIMER SONIDO ARTIFICIAL EN EL ESPACIO
-                            </h3>
-                            <p>
-                                Así, durante 21 días el latido del Sputnik 1 fue el primer sonido artificial en inundar
-                                el
-                                espacio exterior.
-                            </p>
-                            <audio controls>
-                                <source src="assets/Sputnik beep.mp3" type="audio/mp3">
+                    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+                        <h3 class="text-center mt-5">
+                            EL PRIMER SONIDO ARTIFICIAL EN EL ESPACIO
+                        </h3>
+                        <p>
+                            Así, durante 21 días el latido del Sputnik 1 fue el primer sonido artificial en inundar el espacio exterior.
+                        </p>
+                        <div class="text-center">
+                            <audio controls class="mx-auto">
+                                <source src="assets/Sputnik-beep.mp3" type="audio/mp3" />
                             </audio>
-
-                            <h4 class="text-center mt-5">TAMAÑOS</h4>
-                            <p>
-                                La nave era de un tamaño muy similar al de una pelota de playa. Una esfera de aluminio
-                                de 58
-                                centímetros de
-                                diámetro y 83 kilos de peso, y le bastaban 98
-                                minutos para realizar una órbita elíptica
-                                alrededor de la Tierra.
-                            </p>
-                        </div>
-                        <div class="col-12 mx-auto">
-                            <img src="assets/tamaño.svg" class="w-100 mb-3"
-                                alt="Comparación de la altura de el satélite y cohete a escala humana" />
-                        </div>
-                        <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-
-                            <img src="assets/pelota.svg" class="w-100 mb-5"
-                                alt="Comparación del Sputnik-1 con una pelota de playa" />
-
-                            <h4 class="text-center mb-2 mt-5">DESPLIEGUE</h4>
-                            <p>
-                                Se desarrolló una sección especial de transferencia para conectar el satélite a su
-                                cohete R-7. El sistema de separación se diseñó para lanzar primero la cubierta de la
-                                carga útil que protegía el satélite durante el ascenso a través de la atmósfera, y
-                                después el propio satélite.
-                            </p>
-                        </div>
-                        <div class="col-12 mx-auto">
-                            <img src="assets/despliegue.gif" class="w-100 my-5" alt="Despliegue de el satélite " />
                         </div>
 
-                        <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                            <h4 class="text-center mt-5">PARTES</h4>
-                            <p>
-                                El diseño del primer satélite Sputnik es relativamente simple ya que fue construido en
-                                menos
-                                de
-                                un mes al
-                                encontrarse los rusos en una carrera contra el tiempo para poder lanzarlo al espacio.
-                            </p>
+                        <h4 class="text-center mt-5">TAMAÑOS</h4>
+                        <p>
+                            La nave era de un tamaño muy similar al de una pelota de playa. Una esfera de aluminio de 58 centímetros de diámetro y 83 kilos de peso, y le bastaban 98 minutos para realizar una órbita elíptica alrededor de la
+                            Tierra.
+                        </p>
+                    </div>
+                    <div class="col-12 mx-auto">
+                        <object type="image/svg+xml" data="assets/tamano.svg" class="w-100 mb-3">
+                            Comparación de la altura de el satélite y cohete a escala humana
+                        </object>
+                    </div>
+                    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+                        <object type="image/svg+xml" data="assets/pelota.svg" class="w-100 mb-3">
+                            Comparación del Sputnik-1 con una pelota de playa
+                        </object>
 
-                        </div>
+                        <h4 class="text-center mb-2 mt-5">DESPLIEGUE</h4>
+                        <p>
+                            Se desarrolló una sección especial de transferencia para conectar el satélite a su cohete R-7. El sistema de separación se diseñó para lanzar primero la cubierta de la carga útil que protegía el satélite durante
+                            el ascenso a través de la atmósfera, y después el propio satélite.
+                        </p>
+                    </div>
+                    <div class="col-12 mx-auto">
+                        <img src="assets/despliegue.gif" class="w-100 my-5" alt="Despliegue de el satélite " />
+                    </div>
 
-                        <div class="col-12 mx-auto">
-                            <img src="assets/partesm.svg" class="d-md-none w-100" alt="Gráfica mostrando las distintas partes del Sputnik-1" />
-                        <img src="assets/partesd.svg" class="d-none d-md-block w-100" alt="Gráfica mostrando las distintas partes del Sputnik-1" />
-                            
+                    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+                        <h4 class="text-center mt-5">PARTES</h4>
+                        <p>
+                            El diseño del primer satélite Sputnik es relativamente simple ya que fue construido en menos de un mes al encontrarse los rusos en una carrera contra el tiempo para poder lanzarlo al espacio.
+                        </p>
+                    </div>
 
-                        </div>
+                    <div class="col-12 mx-auto">
+                        <object type="image/svg+xml" data="assets/partesm.svg" class="d-md-none w-100">Gráfica mostrando las distintas partes del Sputnik-1</object>
+                        <object type="image/svg+xml" data="assets/partesd.svg" class="d-none d-md-block w-100">Gráfica mostrando las distintas partes del Sputnik-1</object>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-
-
-            <section id="sputnik_dos">
-                <div class="container">
-                    <div class="row">
-                        <img src="assets/espaciod.jpg" class="d-md-none w-100" alt="espacio" />
-                        <img src="assets/espaciom.jpg" class="d-none d-md-block w-100" alt="espacio" />
-                        <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-
-                            <h3 class="text-center mt-5">
-                                SPUTNIK-2
-                            </h3>
-                            <h3 class=" text-center red-font mb-5"> EN DETALLE</h3>
-                            <p>
-                                Llevó por primera vez al espacio un animal, Laika, un can callejero que también se
-                                convirtió en
-                                el primer
-                                animal en morir en una órbita. No existía posibilidad de que la nave retornara a la
-                                Tierra y se
-                                planeó
-                                matar a Laika después de 10 días en órbita. Sin embargo, no fue necesario. En 2002
-                                se
-                                reveló que
-                                la perra
-                                había muerto a pocas horas por el estrés y sobrecalentamiento puesto que se
-                                alcanzaron
-                                los 40°c
-                                por un
-                                desprendimiento de unas placas termoaislantes del satélite.
-                            </p>
-                            <img src="assets/laika.gif" class="w-100 my-5"
-                                alt="Foto de Laika, el can que salió de la atmosfera por primera vez" />
-
-                            <p>
-                                Las dimensiones de la cápsula del Sputnik 2 hacían que los perros tuvieran que
-                                adaptarse a un espacio muy reducido y pasar por un entrenamiento intensivo en
-                                máquinas centrifugadoras que simulaban las condiciones de despegue del satélite.
-                            </p>
-                            <img src="assets/Captula.jpg" class="w-100 my-5"
-                                alt="Satelite Sputnik-2 en donde iba el can." />
-
-                            <p>
-                                Fue gracias a esta misión que a lo largo del programa se siguieron mandando animales
-                                de
-                                prueba
-                                para ver
-                                qué tan
-                                viable era ir al espacio. Mandaron más de 50 seres vivos en misiones.</p>
-
-
-                        </div>
+        <section id="detalles_sputnik_dos" class="mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto mt-5">
+                        <h3 class="text-center mt-5">
+                            SPUTNIK-2
+                        </h3>
+                        <h3 class="text-center red-font mb-5">EN DETALLE</h3>
+                        <p>
+                            Llevó por primera vez al espacio un animal, Laika, un can callejero que también se convirtió en el primer animal en morir en una órbita. No existía posibilidad de que la nave retornara a la Tierra y se planeó
+                            matar a Laika después de 10 días en órbita. Sin embargo, no fue necesario. En 2002 se reveló que la perra había muerto a pocas horas por el estrés y sobrecalentamiento puesto que se alcanzaron los 40°c por un
+                            desprendimiento de unas placas termoaislantes del satélite.
+                        </p>
+                        <img src="assets/laika.gif" class="w-100 my-5" alt="Foto de Laika, el can que salió de la atmosfera por primera vez" />
+                        <p>
+                            Las dimensiones de la cápsula del Sputnik 2 hacían que los perros tuvieran que adaptarse a un espacio muy reducido y pasar por un entrenamiento intensivo en máquinas centrifugadoras que simulaban las condiciones
+                            de despegue del satélite.
+                        </p>
+                        <img src="assets/Captula.jpg" class="w-100 my-5" alt="Satelite Sputnik-2 en donde iba el can." />
+                        <p>
+                            Fue gracias a esta misión que a lo largo del programa se siguieron mandando animales de prueba para ver qué tan viable era ir al espacio. Mandaron más de 50 seres vivos en misiones.
+                        </p>
                     </div>
                 </div>
-                <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                    <img src="assets/animales.svg" class="w-100 mt-3 mb-5"
-                        alt="Gráfica de los animales que participaron en las primeras misiones" />
-                </div>
-            </section>
+            </div>
+            <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+                <object type="image/svg+xml" data="assets/animales.svg" class="w-100 mt-3 mb-5">Gráfica mostrando las distintas partes del Sputnik-1</object>
+            </div>
+        </section>
 
-            <section id="conclusion">
-                <div class="container">
-                    <div class="row">
-                        <img src="assets/espaciod.jpg" class="d-md-none w-100" alt="espacio" />
-                        <img src="assets/espaciom.jpg" class="d-none d-md-block w-100" alt="espacio" />
-                        <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                            <h4 class="text-center mt-5">EFECTO SPUTNIK</h4>
-                           
-                            <img src="assets/efecto.jpg" class="w-100 my-3" alt="Primer vuelo espacial tripulado" />
-                            <p>Que la Unión Soviética no solo lograra tocar el espacio, sino que al mismo tiempo
-                                contraatacar
-                                con armas
-                                nucleares, provocó el llamado <i>efecto Sputnik:</i> Estados Unidos sintió que se
-                                quedaba atrás
-                                con las
-                                tecnologías que la URSS colocaba sobre la mesa, por lo cual Dwight Eisenhower, quien en
-                                aquel
-                                momento era su
-                                presidente, decidió acelerar los programas espaciales y armamentísticos del país dado
-                                paso a la
-                                creación de
-                                la NASA.</p>
+        <section id="conclusion" class="mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto" class="mt-5">
+                        <h3 class="text-center mt-5">EFECTO SPUTNIK</h3>
 
-                            <p>El efecto Sputnik no solo provocó tensiones tras desencadenar la carrera espacial, sino
-                                que a su
-                                vez
-                                aumentó la impresión de una amenaza por parte de EE.UU. quienes al final demostraron la
-                                capacidad de igualar
-                                o incluso superar el potencial tecnológico de la Unión Soviética.</p>
+                        <img src="assets/efecto.jpg" class="w-100 my-3" alt="Primer vuelo espacial tripulado" />
+                        <p>
+                            Que la Unión Soviética no solo lograra tocar el espacio, sino que al mismo tiempo contraatacar con armas nucleares, provocó el llamado <i>efecto Sputnik:</i> Estados Unidos sintió que se quedaba atrás con las
+                            tecnologías que la URSS colocaba sobre la mesa, por lo cual Dwight Eisenhower, quien en aquel momento era su presidente, decidió acelerar los programas espaciales y armamentísticos del país dado paso a la
+                            creación de la NASA.
+                        </p>
 
-
-                        </div>
+                        <p>
+                            El efecto Sputnik no solo provocó tensiones tras desencadenar la carrera espacial, sino que a su vez aumentó la impresión de una amenaza por parte de EE.UU. quienes al final demostraron la capacidad de igualar o
+                            incluso superar el potencial tecnológico de la Unión Soviética.
+                        </p>
                     </div>
                 </div>
+            </div>
+        </section>
 
-            </section>
-
-            
         <aside>
             <div class="container">
                 <div class="row py-5">
@@ -527,8 +408,8 @@
                         <dl>
                             <dt>Créditos:</dt>
                             <dd>
-                                Infografía digital desarrollada por <a href="#" class="link-secondary">Aylin Bastías</a>,<a href="#" class="link-secondary"> Dairyn Jordán</a>, <a href="#" class="link-secondary"> Fernanda Saldivia</a>,
-                                <a href="#" class="link-secondary"> Marcela</a>.
+                                Infografía digital desarrollada por <a href="#" class="link-secondary">Aylin Bastías</a>, <a href="#" class="link-secondary"> Dairyn Jordán</a>, <a href="#" class="link-secondary"> Fernanda Saldivia</a>,
+                                <a href="#" class="link-secondary">Marcela</a>.
                             </dd>
                         </dl>
                         <dl>
@@ -566,15 +447,13 @@
                 const listado = document.getElementById("relacionadas");
                 data.forEach((x, i) => {
                     if (i != 0) {
-                        listado.innerHTML += '<li class="position-relative"><dl><dt>' + x.title + ': ' + x.subtitle + '</dt><dd class="small">' + x.short + ' <a href="' + x.url + '" class="fst-normal link-secondary stretched-link">[ver más]</a></dd><dl>';
+                        listado.innerHTML +=
+                            '<li class="position-relative"><dl><dt>' + x.title + ": " + x.subtitle + '</dt><dd class="small">' + x.short + ' <a href="' + x.url + '" class="fst-normal link-secondary stretched-link">[ver más]</a></dd><dl>';
                     }
                 });
             }
             otras().catch((error) => console.error(error));
         </script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-                crossorigin="anonymous"></script>
-</body>
-
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    </body>
 </html>
